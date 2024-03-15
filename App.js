@@ -9,7 +9,7 @@ const PORT = 3000;
 
 app.use(bodyParser.json());
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect('mongodb+srv://abdullahdaniyal:superflies1234@cluster0.s5b7diq.mongodb.net/SCD_Lab08');
 const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('Connected to Database'));
